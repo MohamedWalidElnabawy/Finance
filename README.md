@@ -44,17 +44,7 @@ Built with **Python**, **Flask**, and **SQLite**, it demonstrates authentication
    pip install -r requirements.txt
 
 
-4. Set environment variables
-
-   export FLASK_APP=application.py
-
-   export FLASK_ENV=development
-   
-   export API_KEY=your_api_key_here
-
-
-
-5. Run the app
+4. Run the app
 
    flask run
 
