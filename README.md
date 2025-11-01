@@ -47,7 +47,9 @@ Built with **Python**, **Flask**, and **SQLite**, it demonstrates authentication
 4. Set environment variables
 
    export FLASK_APP=application.py
+
    export FLASK_ENV=development
+   
    export API_KEY=your_api_key_here
 
 
