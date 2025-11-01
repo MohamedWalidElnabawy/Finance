@@ -27,14 +27,16 @@ Built with **Python**, **Flask**, and **SQLite**, it demonstrates authentication
 ⚙️ How to Run Locally
 
 1. Clone the repo
-   git clone https://github.com/yourusername/Finance.git
+   git clone https://github.com/MohamedWalidElnabawy/Finance.git
    cd Finance
 
 
 2. Create and activate a virtual environment
 
    python -m venv venv
+   
    source venv/bin/activate     # macOS/Linux
+   
    venv\Scripts\activate        # Windows
 
 3. Install dependencies
@@ -50,11 +52,11 @@ Built with **Python**, **Flask**, and **SQLite**, it demonstrates authentication
 
 
 
-5. `Run the app
+5. Run the app
 
    flask run
 
-   Open your browser and go to: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+   Open your browser and go to: [http://127.0.0.1:5000]
 
 ---
 
