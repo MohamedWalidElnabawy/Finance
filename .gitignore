@@ -1,0 +1,29 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+env/
+.venv/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Env / secrets
+.env
+*.env
+credentials.json
+config.py
+
+# Databases, uploads
+*.sqlite3
+instance/
+uploads/
+
+# CS50 specific
+dump.rdb

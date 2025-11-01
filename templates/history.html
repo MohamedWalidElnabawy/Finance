@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% block title %}Portfolio{% endblock title %}
+
+{% block main %}
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Symbol</th>
+      <th scope="col">Shares</th>
+      <th scope="col">Price</th>
+      <th scope="col">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for transaction in transactions %}
+    <tr>
+      <td>{{ transaction.symbol.upper() }}</td>
+      <td>{{ transaction.shares }}</td>
+      <td>{{ transaction.price | usd }}</td>
+      <td>{{transaction.type}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- Pagination Controls -->
+<div class="d-flex justify-content-center mt-3">
+  {% if page > 1 %}
+  <a href="?page={{ page - 1 }}" class="btn btn-secondary mx-1">Previous</a>
+  {% endif %}
+
+  <span class="align-self-center mx-2">Page {{ page }} of {{ total_pages }}</span>
+
+  {% if page < total_pages %}
+  <a href="?page={{ page + 1 }}" class="btn btn-secondary mx-1">Next</a>
+  {% endif %}
+</div>
+
+{% endblock main %}
